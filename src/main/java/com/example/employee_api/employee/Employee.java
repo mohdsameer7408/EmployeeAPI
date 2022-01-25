@@ -27,6 +27,12 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(String name, String email, String salary) {
+        this.name = name;
+        this.email = email;
+        this.salary = salary;
+    }
+
     public Employee(String name, String email, String salary, Integer departmentId) {
         this.name = name;
         this.email = email;
