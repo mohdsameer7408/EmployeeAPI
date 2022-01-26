@@ -16,10 +16,15 @@
 - For Department Routes
 
   - GET - [To get all departments](http://localhost:8080/departments)
+    http://localhost:8080/departments
   - GET - [To get a department by id](http://localhost:8080/departments/1)
+    http://localhost:8080/departments/1
   - POST - [To create a department](http://localhost:8080/departments)
+    http://localhost:8080/departments
   - PUT - [To update a department](http://localhost:8080/departments/2)
+    http://localhost:8080/departments/2
   - DELETE - [To delete a department](http://localhost:8080/departments/1)
+    http://localhost:8080/departments/1
 
 - For Employee Routes
   - GET - [To get all employees with departmentId](http://localhost:8080/departments/1/employees)
