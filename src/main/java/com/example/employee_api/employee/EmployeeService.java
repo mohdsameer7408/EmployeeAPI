@@ -15,6 +15,7 @@ import com.example.employee_api.exception.CustomIdNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
@@ -44,6 +45,7 @@ public class EmployeeService {
         return employeeRepository.save(employee);
     }
 
+    @Transactional
     public Employee updateEmployee(Integer id, Employee modifiedEmployee) {
         Employee employee = employeeRepository.findById(id).orElse(null);
         employee.setName(modifiedEmployee.getName());
