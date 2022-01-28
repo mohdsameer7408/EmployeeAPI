@@ -42,6 +42,14 @@ public class Employee implements Serializable {
         this.department = new Department(departmentId, "");
     }
 
+    public Employee(int id, String name, String email, String salary, Integer departmentId) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.salary = salary;
+        this.department = new Department(departmentId, "");
+    }
+
     public Integer getId() {
         return id;
     }
