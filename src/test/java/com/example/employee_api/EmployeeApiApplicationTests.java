@@ -48,6 +48,8 @@ class EmployeeApiApplicationTests {
 	Employee employee1 = new Employee(1, "John", "john@gmail.com", "20000", 1);
 	Employee employee2 = new Employee(2, "Bob", "Bob@gmail.com", "40000", 1);
 
+	// test cases for department routes
+
 	@Test
 	void testGetAllDepartments() {
 		when(departmentRepository.findAll())
@@ -88,6 +90,8 @@ class EmployeeApiApplicationTests {
 				.thenReturn(Stream.of(employee1, employee2).collect(Collectors.toList()));
 		assertEquals(2, employeeService.getAllEmployees(department1.getId()).size());
 	}
+
+	// test cases for employee routes
 
 	@Test
 	void testGetEmployee() throws Exception {

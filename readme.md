@@ -43,3 +43,5 @@
 ---
 
 **This API has all the required log messages and exception handling**
+**TDD has been done using JUnits and Mockito**
+**Have used redis cache to store data that dosen't changes frequently**
